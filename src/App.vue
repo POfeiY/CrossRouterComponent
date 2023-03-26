@@ -3,4 +3,7 @@
     <router-view />
     <Footer />
   </main>
+  <FloatContainer v-slot="slotProps">
+    <ImageWrap v-bind="slotProps.attrs" />
+  </FloatContainer>
 </template>
