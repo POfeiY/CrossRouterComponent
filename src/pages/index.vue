@@ -6,11 +6,8 @@
   <div>
     <div i-carbon-campsite text-4xl inline-block />
     <p>
-      <span>cross page components</span>
+      <span>PageIndex</span>
     </p>
-
-    <div py-4 />
-
     <div>
       <RouterLink to="/PageA" class="btn m4">
         to PageA

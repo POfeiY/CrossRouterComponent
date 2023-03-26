@@ -13,11 +13,9 @@ const delarge = () => {
     <p>
       <span>PageA</span>
     </p>
-
-    <div py-4 />
     <div>
       <RouterLink to="/" btn>
-        to Index
+        Back Index
       </RouterLink>
       <button btn m4 @click.stop="enlarge">
         bigger
