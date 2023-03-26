@@ -16,6 +16,6 @@
         to PageA
       </RouterLink>
     </div>
-    <ProxyContainer w-100 rounded-xl />
+    <ProxyContainer w-40 h-40 rounded-xl />
   </div>
 </template>

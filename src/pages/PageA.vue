@@ -1,9 +1,31 @@
+<script setup lang="ts">
+let size = $ref(useLocalStorage('size', 120))
+const enlarge = () => {
+  size += 10
+}
+const delarge = () => {
+  size -= 10
+}
+</script>
 <template>
-  <div>A</div>
-  <div>
-    <RouterLink to="/" class="btn m4">
-      to Index
-    </RouterLink>
+  <div flex="~ col" items-center justify="center">
+    <div i-carbon-campsite text-4xl inline-block />
+    <p>
+      <span>PageA</span>
+    </p>
+
+    <div py-4 />
+    <div>
+      <RouterLink to="/" btn>
+        to Index
+      </RouterLink>
+      <button btn m4 @click.stop="enlarge">
+        bigger
+      </button>
+      <button btn @click.stop="delarge">
+        smaller
+      </button>
+    </div>
+    <ProxyContainer :style="{ width: `${size}px`, height: `${size}px` }" rounded="1/2" />
   </div>
-  <ProxyContainer w-200 rounded />
 </template>>
